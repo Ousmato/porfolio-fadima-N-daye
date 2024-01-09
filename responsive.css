@@ -1,0 +1,239 @@
+@media screen  and (max-width: 650px) {
+    body {
+        font-size: 14px;
+      }
+    :root{
+        --couleur-purpose: #00BDC8;
+        --couleur-gris:#F4F4F4;
+    }
+        header{
+            width: 100%;
+            padding: 0 20px;
+            border-bottom: none;
+        }
+        .header .content-inner{
+            padding: 20px;
+            justify-content: flex-start;
+            display: flex;
+            flex-direction: column;
+        }
+
+        nav{
+            position: absolute;
+            left: -300px;
+            top: 0;
+            z-index: 999;
+            width: 190px;
+            height: 100vh;
+            background-color: var(--couleur-gris) ;
+            transition: 0.2s;
+            box-shadow: 2px 0 20px 0 rgba(138, 137, 137, 0.05);
+        }
+
+        #nav_check:checked ~ nav{
+            left: 0;
+        }
+        nav .logo{
+            display: block;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            margin-left: 30px;
+
+        }
+
+        /* .active #icons:before{
+            content: "\2715";
+        } */
+        .hamburger{
+            display: block;
+            background-color: var(--couleur-gris);
+
+        }
+
+        nav ul {
+            display: block;
+            padding: 0 20px;
+            margin-top: 30px;
+        }
+        
+        nav ul li a{
+            margin-bottom: 5px;
+            padding: 10px 10px;
+            border-radius: 5px;
+        }
+        /* ----accueil contenaire debut---------- */
+        .accueil_contenaire{
+            display: flex;
+            justify-content: start;
+            flex-direction: column-reverse;
+        }
+        .image_contenaire{
+            width: 100%;
+            height: 100%;
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .image  {
+            height: 400px;
+            width: 400px;
+            border: none;
+            margin: 0;
+            border-radius: 0%;
+            background: url(doc/photo.png) no-repeat 0 0;
+            background-size: contain;
+            background-position: 50% 50%;
+            animation: float 4s ease-in-out infinite;
+        }
+        
+        @keyframes float{
+           
+        }
+    
+        .nom{
+            /* border: 1px solid red; */
+            /* width: fit-content; */
+            /* display: flex; */
+            
+            width: 100%;
+        }
+        .nom h1{
+            font-size: 1.5em;
+            margin: 0;
+            margin-top: 4px;
+        }
+    .icons_cv{
+        /* border: 1px solid red; */
+        display: flex;
+        padding: 0;
+        justify-content: space-between;
+    }
+
+    
+    .reseaux_sociaux .cv_telecharger a{
+        width: 72%;
+        text-decoration:  none;
+        height: 40px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        font-size: 1rem;
+        color: #fff;
+        background:  var(--couleur-purpose);
+        margin-top: 25px;
+        padding: 10px 18px;
+        border-radius: 15px;
+        
+        text-align: center;
+    
+    }
+
+    #header{
+        margin-left: 0px;
+    }
+
+    .social-icons_head{
+        padding-left: 10px;
+    }
+
+    .content-inner{
+        margin-top: 0;
+        /* border: 1px solid red; */
+    }
+    .content-inner h1{
+        /* padding-left: -20px; */
+        font-size: 23px;
+    }
+
+
+    .spaceur{
+        background-color: var(--couleur-purpose);
+        height: 1px;
+        margin: 10px 5%;
+        /* margin-left: 40px;
+        margin-right: 40px; */
+        /* width: 100%; */
+    }
+
+    .section-2 {
+        margin-top: 0;
+        width: 100%;
+        display: block;
+        /* justify-content: ; */
+        /* border: 1px solid red; */
+        height: fit-content;
+        
+    }
+    
+    .info_contenaire{
+        padding-top: 20px;
+    }
+    .information_contenaire p{
+        font-size: 14px;
+        margin-top: 0;
+    }
+    .class-content{
+        display: inline;
+        width: 100%;
+    }
+    .info_perso{
+        width: 100%;
+       
+    }
+
+    .annee_experience{
+        display: none;
+    }
+    .section-2 h1::before,
+    .section-2 h1::after {
+       display: none;
+    }
+    
+    /* ------accueil */
+
+    /* ------section service----debut---- */
+    .class-services h1::before,
+.class-services h1::after {
+    display: none;
+}
+    .rows-contenaire {
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: column;
+    /* grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    gap: 2.5em; */
+    }
+
+    .class-services .service-column{
+        /* border: 1px solid red; */
+        width: 100%;
+    }
+    /* ------section service----fin---- */
+
+    /* -------section temoin-----debut */
+    swiper-container{
+        /* border: 1px solid red; */
+        width: 100%;
+        margin: 0;
+    }
+    
+    .temoin-info{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+    /* -------section temoin-----fin */
+    /* ------section footer debut------ */
+    .contact-info{
+        display: none;
+    }
+    #myForm{
+        width: 100%;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+    /* ------section footer fin------ */
+}
